@@ -1,7 +1,6 @@
 ---
 layout: page
-title: inu websec
-permalink: /index/
+title: about
 ---
 
 # About
