@@ -42,4 +42,4 @@ plugins:
 #   - vendor/ruby/
 
 theme: just-the-docs
-
+remote_theme: pmarsceill/just-the-docs
