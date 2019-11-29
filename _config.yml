@@ -38,4 +38,4 @@ plugins:
 #   - vendor/ruby/
 
 remote_theme: pmarsceill/just-the-docs
-baseurl: "/websec101"
+baseurl: "/inuwebsec101"
