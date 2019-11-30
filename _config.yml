@@ -18,7 +18,7 @@ email: hoge@example.com
 description: 犬(akakou)が教えるWebセキュリティ入門
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 
 # Build settings
 markdown: kramdown
@@ -40,3 +40,4 @@ plugins:
 theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 baseurl: "/inuwebsec101"
+
