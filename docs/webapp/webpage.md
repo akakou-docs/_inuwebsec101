@@ -15,6 +15,8 @@ nav_order: 1
 
 私達はサーバというコンピュータから送られてきた、プログラムのファイル（主に HTML、CSS、Javascript）をブラウザ上で実行し、結果を画面に出力することで、ウェブページを見ることができています。
 
+![]({{ '/assets/images/browser.png' | relative_url }})
+
 ## HTML
 
 HTML(HyperText Markup Language)とは、ウェブページを作るための言語です。
