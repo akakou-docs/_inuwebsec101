@@ -1,7 +1,8 @@
 ---
 layout: page
 title: ウェブページの仕組み
-permalink: /0.web-page
+parent: Webアプリケーションの仕組み
+nav_order: 1
 ---
 
 # ウェブページの仕組み
@@ -14,6 +15,8 @@ permalink: /0.web-page
 
 私達はサーバというコンピュータから送られてきた、プログラムのファイル（主に HTML、CSS、Javascript）をブラウザ上で実行し、結果を画面に出力することで、ウェブページを見ることができています。
 
+![]({{ '/assets/images/browser.png' | relative_url }})
+
 ## HTML
 
 HTML(HyperText Markup Language)とは、ウェブページを作るための言語です。
@@ -25,7 +28,7 @@ HTML(HyperText Markup Language)とは、ウェブページを作るための言�
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <!-- headで囲まれた部分は見えない -->
     <meta charset="UTF-8" />
@@ -52,14 +55,15 @@ HTML によって表されるウェブページに動的な変更を加えるた
 ##### /index.html
 
 ```html
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
   <head>
     <!-- headで囲まれた部分は見えない -->
     <meta charset="UTF-8" />
     <title>Hello</title>
 
     <!-- Javascriptのファイルを読み込んでいる -->
-    <script src="/script.js" />
+    <script src="/script.js"></script>
   </head>
   <body>
     <!-- 見出し -->
