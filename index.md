@@ -18,6 +18,10 @@ title: このサイトについて
 修正箇所があれば、[akakou](https://twitter.com/_akakou)に DM またはリプライ をお願いします。
 （時間的な都合で、すべてのミスを迅速に修正できるとは限りません。ご了承ください。）
 
+## Google Analytics
+
+このサイトでは、Google Analytics を利用した、アクセスの解析を行っています。
+
 ## アドベントカレンダー
 
 このサイトは、[akakou Advent Calendar 2019](https://adventar.org/calendars/4723)のネタです。
