@@ -1,7 +1,8 @@
 ---
 layout: page
 title: クライアントサーバモデル
-permalink: /1.client-server-model
+parent: Webアプリケーションの仕組み
+nav_order: 2
 ---
 
 # クライアントサーバモデル
@@ -14,7 +15,7 @@ permalink: /1.client-server-model
 
 **クライアント** （= 利用者側） が**サーバ** （= 提供側）に対して **リクエスト** （ = Web ページを構成するファイル※1 の要求） を送信し、それに対して **レスポンス**（= Web ページを構成するファイル）を返します。
 
-![](img/server-clinet-model.png)
+![]({{ '/assets/images/client-server-model.png' | relative_url }})
 
 ## クライアント
 

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: ウェブページの仕組み
-permalink: /0.web-page
+parent: Webアプリケーションの仕組み
+nav_order: 1
 ---
 
 # ウェブページの仕組み
