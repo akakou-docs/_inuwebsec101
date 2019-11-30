@@ -26,7 +26,7 @@ HTML(HyperText Markup Language)とは、ウェブページを作るための言�
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <!-- headで囲まれた部分は見えない -->
     <meta charset="UTF-8" />
@@ -53,14 +53,15 @@ HTML によって表されるウェブページに動的な変更を加えるた
 ##### /index.html
 
 ```html
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
   <head>
     <!-- headで囲まれた部分は見えない -->
     <meta charset="UTF-8" />
     <title>Hello</title>
 
     <!-- Javascriptのファイルを読み込んでいる -->
-    <script src="/script.js" />
+    <script src="/script.js"></script>
   </head>
   <body>
     <!-- 見出し -->
