@@ -103,6 +103,6 @@ CSS（Cascading Style Sheets）は、Web ページのスタイル（見た目）
 
 HTML、CSS、Javascript を実行し、画面に結果を出力したりするプログラムであり、例としては Chrome、Firefox、Edge などが挙げられます。
 
-# 備考
+## 備考
 
 ※ 特に[セキュアプログラミングの章（未公開）]()、[脆弱性の章（未公開）]()を学びたい方は、これらの言語（HTML、CSS、Javascript）をよく理解しておくと良いと思います。個人的なおすすめは、[Progate](https://prog-8.com/languages/html)です。
