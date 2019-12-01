@@ -7,7 +7,7 @@
   </head>
   <body>
     <!-- 見出し -->
-    <h1>Hello, <?php echo $_GET['name']?>. </h1>
+    <h1>Hello, <?php echo $_POST['name']?>. </h1>
     <!-- 文字 -->
     <p>I'm akakou.</p>
   </body>
