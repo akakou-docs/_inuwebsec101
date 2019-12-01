@@ -66,7 +66,7 @@ permalink: /webapp/active-page/
 </html>
 ```
 
-#### 例. `?name=usagi`
+#### 例. neko を指定した例
 
 このページの URL の最後に`?name=neko`をつけたときのレスポンスは以下のようになるはずです。
 `<h1>Hello, neko.</h1>` のように、URL に記載した`neko`という文字がレスポンスボディに含まれています。
