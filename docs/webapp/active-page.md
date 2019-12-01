@@ -44,6 +44,50 @@ permalink: /webapp/active-page/
 
 ![]({{ '/assets/images/active-usagi.png' | relative_url }})
 
+### 動的サイトの例
+
+以下の PHP のコードは動的な ページの例です。
+この Web ページの URL の最後に`?name=自分の名前`を入れると、自分の名前を含むレスポンスが帰ってきます。
+
+```php
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- headで囲まれた部分は見えない -->
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <!-- 見出し -->
+    <h1>Hello, <?php echo $_GET['name']?>. </h1>
+    <!-- 文字 -->
+    <p>I'm akakou.</p>
+  </body>
+</html>
+```
+
+#### 例. `?name=usagi`
+
+このページの URL の最後に`?name=neko`をつけたときのレスポンスは以下のようになるはずです。
+`<h1>Hello, neko.</h1>` のように、URL に記載した`neko`という文字がレスポンスボディに含まれています。
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- headで囲まれた部分は見えない -->
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <!-- 見出し -->
+    <h1>Hello, neko.</h1>
+    <!-- 文字 -->
+    <p>I'm akakou.</p>
+  </body>
+</html>
+```
+
 ## 備考
 
 ※1 他にもデータベースの中身や、サーバの状態、外部 API を叩いた結果等が考えられます。
