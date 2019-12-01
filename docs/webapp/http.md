@@ -3,6 +3,7 @@ layout: page
 title: HTTP リクエスト・HTTP レスポンス
 parent: Webアプリケーションの仕組み
 nav_order: 3
+permalink: /webapp/http/
 ---
 
 # HTTP リクエスト・HTTP レスポンス
