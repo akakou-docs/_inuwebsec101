@@ -69,18 +69,19 @@ Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.15749
 
 #### `{type}`として使われる例
 
-| Content-Type | ファイルの種類 |
-| text/plain | テキスト |
-| text/csv | CSV |
-| text/html | HTML |
-| text/css | CSS |
-| text/javascript |JavaScript |
-| application/json | JSON |
-| application/pdf | PDF |
-| image/jpeg | JPEG |
-| image/png | PNG |
-| image/gif | GIF |
-| video/mp4 | MP4 |
+|   Content-Type   | ファイルの種類 |
+| :--------------: | :------------: |
+|    text/plain    |    テキスト    |
+|     text/csv     |      CSV       |
+|    text/html     |      HTML      |
+|     text/css     |      CSS       |
+| text/javascript  |   JavaScript   |
+| application/json |      JSON      |
+| application/pdf  |      PDF       |
+|    image/jpeg    |      JPEG      |
+|    image/png     |      PNG       |
+|    image/gif     |      GIF       |
+|    video/mp4     |      MP4       |
 
 ### User-Agent: {agent}
 
@@ -102,6 +103,104 @@ Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.15749
 
 ### Cookie: {cookies}
 
-例：`Cookie: \_ga=GA1.1.11882848.1574929583; \_ga_J5E5G995V7=GS1.1.1574933002.2.1.1574936118.0`（10 行目）
+例：`Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.1574936118.0`（10 行目）
 
 `{cookies}`は複数の cookie※のキーとそれに対応する値を持ちます。
+
+---
+
+## HTTP リクエストヘッダ
+
+以下のような HTTP レスポンスの上部※を HTTP レスポンスヘッダと呼びます。
+HTTP レスポンスヘッダでは行の左側にヘッダー名を、右側に値を入れることが多いです。
+
+#### HTTP リクエストヘッダの例
+
+```http
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2019 06:26:32 GMT
+Server: Apache/2.4.38 (Debian)
+Content-Encoding: gzip
+Content-Length: 221
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.1574936118.0
+```
+
+## 各ヘッダーに対する解説
+
+覚えておくと良いものだけ、解説します。
+
+### HTTP/{version} {status_code}
+
+例：`POST /hello.php HTTP/1.1`（1 行目）
+
+`version`は HTTP のバージョンを表します。
+
+`{status_code}`は、ステータスコードと言われ、サーバからのレスポンスの意味を表します。
+
+よく使われる`{status_code}`は以下のとおりです。
+
+#### ステータスコード一覧
+
+|     ステータスコード      | 意味                                                                                                                                                         |
+| :-----------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|          200 OK           | リクエストが成功したことを示します。                                                                                                                         |
+|        201 Created        | リクエストは成功し、その結果新たなリソースが作成されたことを示します。                                                                                       |
+|   301 Moved Permanently   | リクエストされたリソースの URL が永遠に変更されたことを示します。レスポンスで新しい URL が与えられます。                                                     |
+|     304 Not Modified      | このレスポンスコードはクライアントに対して、レスポンスは変更されていないことを示します。<br>よって、クライアントはキャッシュ済みのレスポンスを使い続けます。 |
+|      400 Bad Request      | 構文が無効であるためサーバーがリクエストを理解できないことを示します。                                                                                       |
+|     401 Unauthorized      | HTTP 標準では "unauthorized" (不許可) と定義されていますが、意味的にはこのレスポンスは "unauthenticated" (未認証) です。                                     |
+|       403 Forbidden       | 認証されていないなどの理由でクライアントにコンテンツのアクセス権がなく、サーバーが適切なレスポンスの返信を拒否していることを示します。                       |
+|       404 Not Found       | サーバーがリクエストされたリソースを発見できないことを示します。                                                                                             |
+|  405 Method Not Allowed   | サーバーがリクエストメソッドを理解しているものの、無効にされており使用することができません。                                                                 |
+| 500 Internal Server Error | サーバー側で処理方法がわからない事態が発生したことを示します。                                                                                               |
+|  503 Service Unavailable  | サーバーはリクエストを処理する準備ができていないことを示します。一般的な原因は、サーバーがメンテナンスや過負荷でダウンしていることです。                     |
+
+### Server: {server_type}
+
+例：`Server: Apache/2.4.38 (Debian)`（3 行目）
+
+`{server_type}`はサーバの種類を表します。
+
+### Content-Length: {length}
+
+例：`Content-Length: 221`（5 行目）
+
+`{length}`にはレスポンスボディのサイズ（バイト）が入ります。
+
+### Content-Type: {type}
+
+例：`Content-Type: text/html; charset=UTF-8`（8 行目）
+
+`{type}`はレスポンスボディがどのようなデータを持っているかの種類が入ります。
+
+#### `{type}`として使われる例
+
+リクエストボディの Content-Type の例一覧と同じです。
+
+|   Content-Type   | ファイルの種類 |
+| :--------------: | :------------: |
+|    text/plain    |    テキスト    |
+|     text/csv     |      CSV       |
+|    text/html     |      HTML      |
+|     text/css     |      CSS       |
+| text/javascript  |   JavaScript   |
+| application/json |      JSON      |
+| application/pdf  |      PDF       |
+|    image/jpeg    |      JPEG      |
+|    image/png     |      PNG       |
+|    image/gif     |      GIF       |
+|    video/mp4     |      MP4       |
+
+### Set-Cookie: {cookies}
+
+例：`Set-Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.1574936118.0`（9 行目）
+
+ブラウザに`{cookies}`に指定したクッキーをセットします。
+
+## 参考
+
+ステータスコードについては、以下のサイトを参考にしました。
+https://developer.mozilla.org/ja/docs/Web/HTTP/Status
