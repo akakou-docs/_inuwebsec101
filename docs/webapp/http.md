@@ -1,12 +1,12 @@
 ---
 layout: page
-title: HTTP リクエスト・HTTP レスポンス
+title: HTTP
 parent: Webアプリケーションの仕組み
 nav_order: 4
 permalink: /webapp/http/
 ---
 
-# HTTP リクエスト・HTTP レスポンス
+# HTTP
 
 前提ページ：[クライアントサーバモデル](../client-server-model/)  
 推奨ページ：[ウェブページの仕組み](../webpage/)
@@ -78,17 +78,11 @@ Host: 127.0.0.1:4001
 Connection: keep-alive
 Content-Length: 9
 Cache-Control: max-age=0
-Origin: http://127.0.0.1:4001
-Upgrade-Insecure-Requests: 1
 Content-Type: application/x-www-form-urlencoded
 User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
-Sec-Fetch-User: ?1
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
-Sec-Fetch-Site: same-origin
-Sec-Fetch-Mode: navigate
 Referer: http://127.0.0.1:4001/
 Accept-Encoding: gzip, deflate, br
-Accept-Language: ja,en;q=0.9
 Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.1574936118.0
 ```
 
