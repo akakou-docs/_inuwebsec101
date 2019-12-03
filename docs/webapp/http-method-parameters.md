@@ -46,7 +46,7 @@ URL の最後にキーとそれに対する値を入れて、サーバに伝え�
 - `http://127.0.0.1?key1=value1&key2=value2`
 - `http://127.0.0.1?name=fizz`
 
-#### 送信する HTML 例
+#### リクエスト パラメータを送信する HTML 例
 
 ```html
 <!DOCTYPE html>
@@ -70,7 +70,7 @@ URL の最後にキーとそれに対する値を入れて、サーバに伝え�
 
 #### 受け取る PHP 例
 
-```html
+```php
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -95,11 +95,77 @@ URL の最後にキーとそれに対する値を入れて、サーバに伝え�
 
 ```http
 GET /hello.php?name=neko HTTP/1.1
-Host: localhost:4003
+Host: localhost:4002
 Connection: keep-alive
 User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
 Referer: http://localhost:4003/
 Accept-Encoding: gzip, deflate, br
 Accept-Language: ja,en;q=0.9
+```
+
+## HTTP リクエストボディ（POST の場合）
+
+何もわからん
+
+#### リクエスト パラメータを送信する HTML 例
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- headで囲まれた部分は見えない -->
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <!-- 見出し -->
+    <h1>What's your name?</h1>
+    <!-- 文字 -->
+    <form action="hello.php" method="post">
+      <input name="name" type="text" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
+```
+
+#### 受け取る PHP 例
+
+```php
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- headで囲まれた部分は見えない -->
+    <meta charset="UTF-8" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <!-- 見出し -->
+    <h1>
+      Hello,
+      <!-- ここでGETパラメータを受け取ってそのまま表示 -->
+      <?php echo $_POST['name']?>.
+    </h1>
+    <!-- 文字 -->
+    <p>I'm akakou.</p>
+  </body>
+</html>
+```
+
+#### 送信する HTTP リクエスト例
+
+```http
+POST /hello.php HTTP/1.1
+Host: 127.0.0.1:4001
+Connection: keep-alive
+Content-Length: 9
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://127.0.0.1:4001/
+Accept-Encoding: gzip, deflate, br
+Cookie: _ga=GA1.1.11882848.1574929583; _ga_J5E5G995V7=GS1.1.1574933002.2.1.1574936118.0
+
+name=neko
 ```
