@@ -19,10 +19,3 @@ services:
       - ./samples/1/:/var/www/html
     ports:
       - "4001:80" # todo: fix
-
-  sample_2:
-    image: php:7.2-apache
-    volumes:
-      - ./samples/3/:/var/www/html
-    ports:
-      - "4003:80" # todo: fix
