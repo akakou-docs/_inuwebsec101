@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Cookie
+title: Cookieとセッション
 parent: Webアプリケーションの仕組み
 nav_order: 6
-permalink: /webapp/cookie/
+permalink: /webapp/cookie-session/
 ---
 
-# Cookie
+# Cookieとセッション
 
 前提ページ：[クライアントサーバモデル](../client-server-model/)  
 推奨ページ：[ウェブページの仕組み](../webpage/)
@@ -14,13 +14,12 @@ permalink: /webapp/cookie/
 Webアプリケーションを作成するときに、ブラウザ側でデータを保存したいことがあります。
 それを叶えるのが、cookieです。
 
-## cookieとは
+## Cookie
 
 ブラウザにデータを保存させる仕組みです。
-またこの保存されたデータもcookieと呼びます。
+またこの保存されたデータもCookieと呼びます。
 
-
-### cookieに関わるHTTPヘッダ
+### Cookieに関わるHTTPヘッダ
 
 #### Cookie: {cookies}
 
@@ -36,3 +35,12 @@ Webアプリケーションを作成するときに、ブラウザ側でデー�
 `Cookie`はクライアント持つCookieを、サーバ側が指定するためのヘッダです。  
 `{cookies}`には、cookie として保存したい 値とそれに対応するキーをセットします。
 
+
+## Cookieを利用したセッション
+
+サーバがクライアントが誰であるかを認識する仕組みをセッションといいます。
+セッションを保つのに、多くの場合Cookieが利用されます。
+
+## 備考
+
+※1 HTTPは状態を持たないので、このようなことが置きます。これを「HTTPはステートレスである」といいます。
