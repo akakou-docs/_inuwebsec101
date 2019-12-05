@@ -3,7 +3,7 @@ layout: page
 title: HTTPメソッドとパラメータ
 parent: Webアプリケーションの仕組み
 nav_order: 5
-permalink: /webapp/http-method
+permalink: /webapp/http-method/
 ---
 
 # HTTP メソッドとパラメータ
