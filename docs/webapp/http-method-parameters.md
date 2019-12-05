@@ -104,9 +104,10 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: ja,en;q=0.9
 ```
 
-## HTTP リクエストボディ（POST の場合）
+## POSTパラメータ
 
-何もわからん
+主に POST メソッド で利用されるパラメータです。
+HTTPリクエストボディにパラメータを入れます。
 
 #### リクエスト パラメータを送信する HTML 例
 
