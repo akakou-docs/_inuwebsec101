@@ -36,6 +36,24 @@ Webアプリケーションを作成するときに、ブラウザ側でデー�
 `{cookies}`には、cookie として保存したい 値とそれに対応するキーをセットします。
 
 
+### Cookie利用の流れ
+
+#### 1. Cookieを取得
+
+ブラウザがサーバにHTTPリクエストを送信し，
+サーバが `Set-Cookie` を含むHTTPレスポンスを返します。
+
+ブラウザーはこの `Set-Cookie` の値を保存します。
+
+![]({{ '/assets/images/cookie1.png' | relative_url }})
+
+#### 2.　Cookieの送信
+
+ブラウザが保存したcookieを取り出し、サーバに`Cookie` ヘッダに付与して、HTTPリクエストを送信します。
+
+![]({{ '/assets/images/cookie2.png' | relative_url }})
+
+
 ## Cookieを利用したセッション
 
 サーバがクライアントが誰であるかを認識する仕組みをセッションといいます。
