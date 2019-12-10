@@ -69,7 +69,7 @@ INSERT INTO users values (4, "tora", "tora@example.com", "メス", 14);
 |  3  | usagi | usagi@example.com | オス |   2   |
 |  4  | tora  | tora@example.com  | メス |  14   |
 
-### UPDATE（レコードの編集）
+### UPDATE（レコードの更新）
 
 ```sql
 UPDATE テーブル名 set 変更 where 条件;
