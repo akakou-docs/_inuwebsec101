@@ -27,11 +27,11 @@ SQL には様々な種類がありますが、今回は MySQL という RDBMS �
 
 以下のようなテーブルを`users` として置いて、各 SQL の操作について説明します。
 
-| id  | name  |       email       | sex  | yaers |
-| :-: | :---: | :---------------: | :--: | :---: |
-|  1  |  inu  |  inu@example.com  | オス |  10   |
-|  2  | neko  | neko@example.com  | メス |   8   |
-|  3  | usagi | usagi@example.com | オス |   2   |
+| id  | name  |       email       | sex  | age |
+| :-: | :---: | :---------------: | :--: | :-: |
+|  1  |  inu  |  inu@example.com  | オス | 10  |
+|  2  | neko  | neko@example.com  | メス |  8  |
+|  3  | usagi | usagi@example.com | オス |  2  |
 
 ### SELECT (レコードの取得)
 
