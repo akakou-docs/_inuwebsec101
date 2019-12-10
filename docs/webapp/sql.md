@@ -89,4 +89,21 @@ UPDATE users set age=19 where id=1;
 |  2  | neko  | neko@example.com  | メス |   8   |
 |  3  | usagi | usagi@example.com | オス |   2   |
 
-## 備考
+### DELETE（レコードの消去）
+
+```
+DELETE FROM テーブル名　WHERE 条件;
+```
+
+以下のような SQL を送信することで、`id`が 1 であるレコードを消去することができます。
+
+```sql
+DELETE FROM users　WHERE id=1;
+```
+
+#### 実行後のテーブル
+
+| id  | name  |       email       | sex  | age |
+| :-: | :---: | :---------------: | :--: | :-: |
+|  2  | neko  | neko@example.com  | メス |  8  |
+|  3  | usagi | usagi@example.com | オス |  2  |
