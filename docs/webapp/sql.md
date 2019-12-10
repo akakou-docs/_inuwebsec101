@@ -99,7 +99,7 @@ UPDATE users SET age=19 WHERE id=1;
 
 DELETE は `テーブル名`のテーブルの`条件`を満たすレコードを消去します。※1
 
-```
+```sql
 DELETE FROM テーブル名　WHERE 条件;
 ```
 
