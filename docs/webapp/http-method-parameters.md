@@ -104,10 +104,10 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: ja,en;q=0.9
 ```
 
-## POSTパラメータ
+## POST パラメータ
 
 主に POST メソッド で利用されるパラメータです。
-HTTPリクエストボディにパラメータを入れます。
+HTTP リクエストボディにパラメータを入れます。
 
 #### リクエスト パラメータを送信する HTML 例
 
@@ -156,7 +156,7 @@ HTTPリクエストボディにパラメータを入れます。
 
 #### 送信する HTTP リクエスト例
 
-nekoという名前を設定した場合、以下のようなHTTPリクエストが送信されます。
+neko という名前を設定した場合、以下のような HTTP リクエストが送信されます。
 
 ```http
 POST /hello.php HTTP/1.1
