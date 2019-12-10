@@ -36,7 +36,7 @@ SQL には様々な種類がありますが、今回は MySQL という RDBMS �
 ### SELECT (レコードの取得)
 
 ```sql
-SELECT カラム名 FROM テーブル名 WHERE 条件;
+SELECT カラム名1, カラム名2, カラム名3, ...  FROM テーブル名 WHERE 条件;
 ```
 
 以下のような SQL を送信することで、`id` が 1 であるレコードの`name`をとってくることができます。
