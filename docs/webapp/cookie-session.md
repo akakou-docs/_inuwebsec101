@@ -14,6 +14,8 @@ permalink: /webapp/cookie-session/
 Web アプリケーションを作成するときに、ブラウザ側でデータを保存したいことがあります。
 それを叶えるのが、cookie です。
 
+---
+
 ## Cookie
 
 ブラウザにデータを保存させる仕組みです。
