@@ -14,6 +14,8 @@ permalink: /webapp/sql/
 Web アプリケーションでデータを保存するときに、データベースを利用することが多くあります。
 今回はその操作を行うのに必要な SQL を学びます。
 
+別章の説明では、SELECT 文のみ利用します。
+
 ## SQL
 
 SQL とは、データベースに操作を伝えるための言語です。
@@ -43,5 +45,26 @@ SELECT カラム名 FROM テーブル名 WHERE 条件;
 ```sql
 SELECT name FROM users WHERE id=1;
 ```
+
+### INSERT（レコードの追加）
+
+```sql
+INSERT INTO テーブル名 values (値1, 値2, 値3, ...);
+```
+
+以下のような SQL を送信することで、`id` が 4 で、`name`が`tora`、`email`が`tora@example.com`、`sex`が`メス`、`age`が`14`のレコードを追加することができます。
+
+```sql
+INSERT INTO users values (4, "tora", "tora@example.com", "メス", 14);
+```
+
+#### 実行後のテーブル
+
+| id  | name  |       email       | sex  | yaers |
+| :-: | :---: | :---------------: | :--: | :---: |
+|  1  |  inu  |  inu@example.com  | オス |  10   |
+|  2  | neko  | neko@example.com  | メス |   8   |
+|  3  | usagi | usagi@example.com | オス |   2   |
+|  4  | tora  | tora@example.com  | メス |  14   |
 
 ## 備考
