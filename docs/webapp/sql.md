@@ -25,10 +25,23 @@ SQL には様々な種類がありますが、今回は MySQL という RDBMS �
 
 以下のようなテーブルを`users` として置いて、各 SQL の操作について説明します。
 
-| index | name  |       email       | sex  | yaers |
-| :---: | :---: | :---------------: | :--: | :---: |
-|   1   |  inu  |  inu@example.com  | オス |  10   |
-|   2   | neko  | neko@example.com  | メス |   8   |
-|   3   | usagi | usagi@example.com | オス |   2   |
+| id  | name  |       email       | sex  | yaers |
+| :-: | :---: | :---------------: | :--: | :---: |
+|  1  |  inu  |  inu@example.com  | オス |  10   |
+|  2  | neko  | neko@example.com  | メス |   8   |
+|  3  | usagi | usagi@example.com | オス |   2   |
+
+### SELECT (レコードの取得)
+
+```sql
+SELECT カラム名 FROM テーブル名 WHERE 条件;
+```
+
+以下のような SQL を送信することで、`id` が 1 であるレコードの`name`をとってくることができます。
+例のテーブルの場合、`inu`がデータベースから返ってきます。
+
+```sql
+SELECT name FROM users WHERE id=1;
+```
 
 ## 備考
