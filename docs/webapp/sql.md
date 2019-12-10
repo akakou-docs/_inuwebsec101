@@ -16,6 +16,8 @@ Web アプリケーションでデータを保存するときに、データベ�
 
 別章の説明では、SELECT 文のみ利用します。
 
+---
+
 ## SQL
 
 SQL とは、データベースに操作を伝えるための言語です。
@@ -66,5 +68,25 @@ INSERT INTO users values (4, "tora", "tora@example.com", "メス", 14);
 |  2  | neko  | neko@example.com  | メス |   8   |
 |  3  | usagi | usagi@example.com | オス |   2   |
 |  4  | tora  | tora@example.com  | メス |  14   |
+
+### UPDATE（レコードの編集）
+
+```sql
+UPDATE テーブル名 set 変更 where 条件;
+```
+
+以下のような SQL を送信することで、`id`が 1 であるデータの`age`を 19 に変更できます。
+
+```sql
+UPDATE users set age=19 where id=1;
+```
+
+#### 実行後のテーブル
+
+| id  | name  |       email       | sex  | yaers |
+| :-: | :---: | :---------------: | :--: | :---: |
+|  1  |  inu  |  inu@example.com  | オス |  19   |
+|  2  | neko  | neko@example.com  | メス |   8   |
+|  3  | usagi | usagi@example.com | オス |   2   |
 
 ## 備考
