@@ -55,13 +55,13 @@ SELECT name FROM users WHERE id=1;
 INSERT は `テーブル名`のテーブルに、値 1, 値 2, 値 3, ...のレコードを追加します。※1
 
 ```sql
-INSERT INTO テーブル名 values (値1, 値2, 値3, ...);
+INSERT INTO テーブル名 VALUES (値1, 値2, 値3, ...);
 ```
 
 以下のような SQL を送信することで、`id` が 4 で、`name`が`tora`、`email`が`tora@example.com`、`sex`が`メス`、`age`が`14`のレコードを追加することができます。
 
 ```sql
-INSERT INTO users values (4, "tora", "tora@example.com", "メス", 14);
+INSERT INTO users VALUES (4, "tora", "tora@example.com", "メス", 14);
 ```
 
 #### 実行後のテーブル
@@ -78,13 +78,13 @@ INSERT INTO users values (4, "tora", "tora@example.com", "メス", 14);
 UPDATE は `テーブル名`のテーブルの`条件`を満たすレコードに、`変更`に指定した変更を加えます。※1
 
 ```sql
-UPDATE テーブル名 set 変更 where 条件;
+UPDATE テーブル名 SET 変更 WHERE 条件;
 ```
 
 以下のような SQL を送信することで、`id`が 1 であるデータの`age`を 19 に変更できます。
 
 ```sql
-UPDATE users set age=19 where id=1;
+UPDATE users SET age=19 WHERE id=1;
 ```
 
 #### 実行後のテーブル
