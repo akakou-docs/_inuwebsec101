@@ -37,6 +37,8 @@ SQL には様々な種類がありますが、今回は MySQL という RDBMS �
 
 ### SELECT (レコードの取得)
 
+SELECT は `テーブル名` と`カラム名` 指定したテーブルのカラムのうち、レコードが`条件`に満たすものを取得します。※1
+
 ```sql
 SELECT カラム名1, カラム名2, カラム名3, ...  FROM テーブル名 WHERE 条件;
 ```
@@ -49,6 +51,8 @@ SELECT name FROM users WHERE id=1;
 ```
 
 ### INSERT（レコードの追加）
+
+INSERT は `テーブル名`のテーブルに、値 1, 値 2, 値 3, ...のレコードを追加します。※1
 
 ```sql
 INSERT INTO テーブル名 values (値1, 値2, 値3, ...);
@@ -71,6 +75,8 @@ INSERT INTO users values (4, "tora", "tora@example.com", "メス", 14);
 
 ### UPDATE（レコードの更新）
 
+UPDATE は `テーブル名`のテーブルの`条件`を満たすレコードに、`変更`に指定した変更を加えます。※1
+
 ```sql
 UPDATE テーブル名 set 変更 where 条件;
 ```
@@ -91,6 +97,8 @@ UPDATE users set age=19 where id=1;
 
 ### DELETE（レコードの消去）
 
+DELETE は `テーブル名`のテーブルの`条件`を満たすレコードを消去します。※1
+
 ```
 DELETE FROM テーブル名　WHERE 条件;
 ```
@@ -107,3 +115,7 @@ DELETE FROM users　WHERE id=1;
 | :-: | :---: | :---------------: | :--: | :-: |
 |  2  | neko  | neko@example.com  | メス |  8  |
 |  3  | usagi | usagi@example.com | オス |  2  |
+
+## 備考
+
+※1 厳密な説明ではありませんが、今回は SQL の概要を知ってもらうことを目的としているので、言及しません。
