@@ -6,7 +6,7 @@ nav_order: 8
 permalink: /webapp/sql/
 ---
 
-# データベース
+# SQL
 
 前提ページ：[データベース](../database/)  
 推奨ページ：なし
