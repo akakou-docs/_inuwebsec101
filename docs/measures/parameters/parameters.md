@@ -4,7 +4,7 @@ title: 危険なパラメータから守る
 nav_order: 1
 parent: Web アプリの守り方
 has_children: true
-permalink: /parameters/measures/
+permalink: /measures/parameters/
 ---
 
 # 危険なパラメータから守る
