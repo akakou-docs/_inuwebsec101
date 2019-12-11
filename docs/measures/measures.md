@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Web アプリケーションの守り方
+title: Web アプリの守り方
 nav_order: 2
 has_children: true
 permalink: /measures/
 ---
 
-# Web アプリの守り方
+# Web アプリケーションの守り方
 
 この章では Web アプリケーションにおけるセキュリティ対策について書きます。  
 わからない単語等が出た場合は、[Web アプリケーションの仕組み](../webapp/)を読んで下さい。
