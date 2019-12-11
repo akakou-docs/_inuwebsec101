@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 静的ページと動的ページ
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 3
 permalink: /webapp/active-page/
 ---

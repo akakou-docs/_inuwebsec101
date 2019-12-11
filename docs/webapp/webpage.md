@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ウェブページの仕組み
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 1
 permalink: /webapp/webpage/
 ---

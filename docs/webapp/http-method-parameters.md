@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTTPメソッドとパラメータ
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 5
 permalink: /webapp/http-method/
 ---

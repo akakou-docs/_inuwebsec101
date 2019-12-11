@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTTP
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 4
 permalink: /webapp/http/
 ---

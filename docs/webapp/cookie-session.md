@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cookieとセッション
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 6
 permalink: /webapp/cookie-session/
 ---

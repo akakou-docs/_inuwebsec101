@@ -1,7 +1,7 @@
 ---
 layout: page
 title: クライアントサーバモデル
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 2
 permalink: /webapp/client-server-model/
 ---

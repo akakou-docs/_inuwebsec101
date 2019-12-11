@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Webアプリケーションの仕組み
+title: Web アプリの仕組み
 nav_order: 2
 has_children: true
 permalink: /webapp/

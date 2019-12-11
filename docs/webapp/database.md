@@ -1,7 +1,7 @@
 ---
 layout: page
 title: データベース
-parent: Webアプリケーションの仕組み
+parent: Web アプリの仕組み
 nav_order: 7
 permalink: /webapp/database/
 ---
