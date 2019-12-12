@@ -2,7 +2,7 @@
 layout: page
 title: バリデーションチェック
 parent: 危険なパラメータから守る
-nav_order: 1
+nav_order: 2
 permalink: /measures/parameters/validation/
 ---
 
