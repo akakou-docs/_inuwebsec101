@@ -23,3 +23,33 @@ permalink: /measures/parameters/escape/
 
 入力を無害なデータに変換して出力することです。
 ハッカーが攻撃に利用するデータは特殊な文字（プログラム上意味を持つ文字）を含んでいることが多くあり、エスケープではその特殊な文字を無害な文字列に変換します。
+
+## HTML の場合
+
+### 攻撃に利用される特殊な文字
+
+以下のような文字には気をつけなければいけない。
+
+```
+'';"<>&
+```
+
+### PHP のコード
+
+以下のコードでは、`htmlspecialchars($name, ENT_QUOTES)`で`$name`をエスケープしている。
+
+```php
+<p><?php
+$name = $_GET['name'];
+$escaped_name = htmlspecialchars($name, ENT_QUOTES);
+echo $escaped_name;
+?></p>
+```
+
+### PHP が生成したコード
+
+`name` に危険そうなデータを入れると、無害化されて返ってくる。
+
+```html
+<p>&#039;&#039;;&quot;&lt;&gt;&amp;</p>
+```
