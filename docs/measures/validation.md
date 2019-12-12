@@ -1,9 +1,9 @@
 ---
 layout: page
 title: バリデーションチェック
-parent: 危険なパラメータから守る
+parent: Web アプリの守り方
 nav_order: 2
-permalink: /measures/parameters/validation/
+permalink: /measures/validation/
 ---
 
 # バリデーションチェック

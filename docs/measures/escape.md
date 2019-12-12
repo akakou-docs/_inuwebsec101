@@ -1,9 +1,9 @@
 ---
 layout: page
 title: エスケープ
-parent: 危険なパラメータから守る
+parent: Web アプリの守り方
 nav_order: 1
-permalink: /measures/parameters/escape/
+permalink: /measures/escape/
 ---
 
 # エスケープ（無害化）
