@@ -26,9 +26,11 @@ permalink: /measures/parameters/escape/
 
 ## HTML の場合
 
+HTML をエスケープしない場合、XSS（クロスサイトスクリプティング）の攻撃が行われてしまう可能性があります。
+
 ### 攻撃に利用される特殊な文字
 
-以下のような文字には気をつけなければいけない。
+以下のような文字には気をつけなければいけません。
 
 ```
 '';"<>&
@@ -36,7 +38,7 @@ permalink: /measures/parameters/escape/
 
 ### PHP のコード
 
-以下のコードでは、`htmlspecialchars($name, ENT_QUOTES)`で`$name`をエスケープしている。
+以下のコードでは、`htmlspecialchars($name, ENT_QUOTES)`で`$name`をエスケープしています。
 
 ```php
 <p><?php
@@ -49,7 +51,7 @@ echo $escaped_name;
 ### PHP が生成したコード
 
 `name` に危険そうなデータを入れると、無害化されて返ってくる。  
-以下では`'';"<>&`を`name`に追加している。
+以下では`'';"<>&`を`name`に追加しています。
 
 ```html
 <p>&#039;&#039;;&quot;&lt;&gt;&amp;</p>
