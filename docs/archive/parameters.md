@@ -1,5 +1,8 @@
 ---
 layout: page
+title: 危険なパラメータから守る
+parent: アーカイブ
+nav_order: 4
 permalink: /archive/parameters/
 ---
 
