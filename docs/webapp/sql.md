@@ -66,12 +66,12 @@ INSERT INTO users VALUES (4, "tora", "tora@example.com", "メス", 14);
 
 #### 実行後のテーブル
 
-| id  | name  |       email       | sex  | yaers |
-| :-: | :---: | :---------------: | :--: | :---: |
-|  1  |  inu  |  inu@example.com  | オス |  10   |
-|  2  | neko  | neko@example.com  | メス |   8   |
-|  3  | usagi | usagi@example.com | オス |   2   |
-|  4  | tora  | tora@example.com  | メス |  14   |
+| id  | name  |       email       | sex  | age |
+| :-: | :---: | :---------------: | :--: | :-: |
+|  1  |  inu  |  inu@example.com  | オス | 10  |
+|  2  | neko  | neko@example.com  | メス |  8  |
+|  3  | usagi | usagi@example.com | オス |  2  |
+|  4  | tora  | tora@example.com  | メス | 14  |
 
 ### UPDATE（レコードの更新）
 
@@ -89,11 +89,11 @@ UPDATE users SET age=19 WHERE id=1;
 
 #### 実行後のテーブル
 
-| id  | name  |       email       | sex  | yaers |
-| :-: | :---: | :---------------: | :--: | :---: |
-|  1  |  inu  |  inu@example.com  | オス |  19   |
-|  2  | neko  | neko@example.com  | メス |   8   |
-|  3  | usagi | usagi@example.com | オス |   2   |
+| id  | name  |       email       | sex  | age |
+| :-: | :---: | :---------------: | :--: | :-: |
+|  1  |  inu  |  inu@example.com  | オス | 19  |
+|  2  | neko  | neko@example.com  | メス |  8  |
+|  3  | usagi | usagi@example.com | オス |  2  |
 
 ### DELETE（レコードの消去）
 
