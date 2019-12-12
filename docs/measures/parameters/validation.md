@@ -46,3 +46,20 @@ echo $age;
 ?>
 </p>
 ```
+
+## 正規表現を用いたチェック
+
+電話番号等のチェックは、正規表現を用いて行うことが多いです。
+
+```php
+<p><?php
+// リクエストパラメータにからageを取得
+$phone_number = $_GET['phone'];
+
+// 正規表現を用いた電話番号の形式かのチェック
+// 電話番号の形式でなければ、exit(1)する。
+if(!preg_match('/^[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}$/', $phone_number)) exit(1);
+
+echo "ok your phone number is " . $phone_number;
+?></p>
+```
