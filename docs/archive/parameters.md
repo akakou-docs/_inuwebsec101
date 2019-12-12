@@ -1,10 +1,6 @@
 ---
 layout: page
-title: 危険なパラメータから守る
-nav_order: 1
-parent: Web アプリの守り方
-has_children: true
-permalink: /measures/parameters/
+permalink: /archive/parameters/
 ---
 
 # 危険なパラメータから守る
@@ -13,6 +9,8 @@ permalink: /measures/parameters/
 推奨ページ：なし
 
 Web アプリケーションは多くのパラメータ※を扱います。
+
+このサイトは、アーカイブされています。
 
 #### パラメータの例
 
