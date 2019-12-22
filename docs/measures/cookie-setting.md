@@ -29,5 +29,19 @@ Cookie に対する設定で、漏洩のリスクが下げられることがあ�
 |   path   | Cookie を送信する URI（の一番ルート）                                     |           /index.php           |
 | max-age  | Cookie の寿命（秒）                                                       |              3600              |
 |  expire  | 有効期限が切れる日付                                                      | Fri, 31-Dec-1999 23:59:59 GMT; |
-|  secure  | この属性が true の場合、http 通信の場合 cookie は送られなくなる。         |             false              |
+|  secure  | この属性が true の場合、http 通信の場合 Cookie は送られなくなる           |             false              |
 | httponly | この属性が true の場合、JavaScript が Cookie にアクセスできないようになる |             false              |
+
+## 推奨の設定
+
+### domain：必要最低限 or なし
+
+必要最低限の設定、またはなしを選びましょう。
+
+### secure：true
+
+true を設定しましょう。（HTTP の際に、Cookie が送信されなくなる。）
+
+### httponly: true
+
+true を設定しましょう。（JavaScript が Cookie にアクセスできないようになる。）
