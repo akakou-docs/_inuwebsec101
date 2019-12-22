@@ -8,10 +8,10 @@ permalink: /measures/csrf-token/
 
 # CSRF トークン
 
+対象の脆弱性：CSRF
+
 攻撃者は CSRF の脆弱性をついて、攻撃をしてくることがあります。
 今回はその対策に関する話です。
-
-対象の脆弱性：CSRF
 
 ---
 
