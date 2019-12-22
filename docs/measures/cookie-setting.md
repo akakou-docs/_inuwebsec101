@@ -8,10 +8,15 @@ permalink: /measures/cookie-setting/
 
 # Cookie の設定
 
-前提知識：[セッション ID](../../webapp/cookie-session/)
+前提知識：[Cookie とセッション](../../webapp/cookie-session/)  
 対象の脆弱性：XSS（リスク軽減）
 
 Cookie はセッション ID を持つことがあるので、盗まれてしまうとかなり不味いです。
-Cookie に対する設定で、漏洩のリスクが下がることがあります。
+Cookie に対する設定で、漏洩のリスクが下げられることがあります。
 
 ---
+
+## Cookie の設定
+
+Cookie はセッション ID を持つことがあるので、盗まれてしまうとかなり不味いです。
+Cookie に対する設定で、漏洩のリスクが下げられることがあります。
