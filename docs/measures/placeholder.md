@@ -22,3 +22,21 @@ permalink: /measures/placeholder/
 SQL の構造をパラメータの値を分けて扱うことで、SQL インジェクション攻撃を防ぎます。※
 
 ユーザの入力が SQL 文に含まれるときは、プレースホルダを利用しましょう。
+
+## 実装例
+
+### 危険な例
+
+ユーザの入力を文字列を用意した文字列と連結させ、SQL 文を生成させています。これは危険なことです。
+
+```php
+/**
+ * userのID（これは記載外でユーザが入力するものとする）から
+ * userのnameを取り出すSQLを生成するコード
+ * user_id： ユーザのID
+ **/
+
+// 文字列の連結によってSQL文を生成している。
+$sql = "SELECT name FROM users WHERE id = '" . $user_id . "'";
+$count = $pdo->exec($sql);
+```
