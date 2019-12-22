@@ -40,3 +40,19 @@ SQL の構造をパラメータの値を分けて扱うことで、SQL インジ
 $sql = "SELECT name FROM users WHERE id = '" . $user_id . "'";
 $count = $pdo->exec($sql);
 ```
+
+### プレースホルダを利用した例
+
+SQL の構造を定義下後にパラメータを与えることで、SQL 文を安全に組みたてています。
+
+```php
+/**
+ * userのID（これは記載外でユーザが入力するものとする）から
+ * userのnameを取り出すSQLを生成するコード
+ * user_id： ユーザのID
+ **/
+$stmt = $pdo->prepare('SELECT name FROM users WHERE id = ?');
+
+$stmt->bindValue($user_id ,$price,PDO::PARAM_INT);
+$stmt->execute();
+```
