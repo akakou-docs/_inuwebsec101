@@ -2,7 +2,7 @@
 layout: page
 title: Cookieの設定
 parent: Web アプリの守り方
-nav_order: 6
+nav_order: 5
 permalink: /measures/cookie-setting/
 ---
 
