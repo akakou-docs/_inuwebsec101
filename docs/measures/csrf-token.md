@@ -1,19 +1,21 @@
 ---
 layout: page
-title: CSRF トークンの利用
+title: CSRF トークン
 parent: Web アプリの守り方
 nav_order: 4
 permalink: /measures/csrf-token/
 ---
 
-# CSRF トークンの利用
+# CSRF トークン
 
-CSRF（クロスサイトリクエストフォージェリ）という攻撃・脆弱性があります。
-これを解決する手段が CSRF トークンの利用です。
+ハッカーは CSRF の脆弱性をついて、攻撃をしてくることがあります。
+今回はその対策に関する話です。
+
+対象：CSRF
 
 ---
 
-## CSRF トークンの利用
+## CSRF トークン
 
 CSRF（クロスサイトリクエストフォージェリ）という攻撃・脆弱性があります。
 これを解決する手段が CSRF トークンの利用です。
