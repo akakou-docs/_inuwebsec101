@@ -29,3 +29,57 @@ HTTP レスポンスヘッダには、セキュリティに関するものが多
 |                             |
 |      X-XSS-Protection       | ブラウザが XSS を検知して、ブロックをするかを決めるもの                            | X-XSS-Protection: 1; mode=block             |
 | Access-Control-Allow-Origin | 別のサイトからのアクセスを許可するかを決めるもの                                   | Access-Control-Allow-Origin: &lt;origin&gt; |
+
+## 推奨の設定
+
+### Content Security Policy
+
+Content Security Policy は最低限で設定すべきです。
+
+#### 例
+
+```http
+Content-Security-Policy: default-src 'self'
+```
+
+### Strict-Transport-Security
+
+Strickt-Transport-Secruity は有効になるよう設定すべきです。
+
+#### 例
+
+```http
+Strict-Transport-Security: max-age=3600
+```
+
+### X-Frame-Options
+
+X-Frame-Options は最低限で設定すべきです。
+必要がなければ、DENY または SAME ORIGIN を推奨します。
+
+#### 例
+
+```http
+X-Frame-Options: deny
+```
+
+### X-XSS-Protection
+
+X-XSS-Protection は有効になるよう設定すべきです。
+
+#### 例
+
+```http
+X-XSS-Protection: 1; mode=block
+```
+
+### Access-Control-Allow-Origin
+
+Access-Control-Allow-Origin は最低限で設定すべきです。
+必要がなければ、&lt;origin&gt; または無設定を推奨します。
+
+#### 例
+
+```http
+Access-Control-Allow-Origin: &lt;origin&gt;
+```
