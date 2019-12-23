@@ -3,7 +3,7 @@ layout: page
 title: ヘッダの設定をセキュアにする
 parent: Web アプリの守り方
 nav_order: 7
-permalink: /measures/headers/
+permalink: /measures/header-setting/
 ---
 
 # ヘッダの設定をセキュアにする
