@@ -74,10 +74,10 @@ X-XSS-Protection: 1; mode=block
 ### Access-Control-Allow-Origin
 
 Access-Control-Allow-Origin は最低限で設定すべきです。
-必要がなければ、&lt;origin&gt; または無設定を推奨します。
+必要がなければ、`<origin>` または無設定を推奨します。
 
 #### 例
 
 ```http
-Access-Control-Allow-Origin: &lt;origin&gt;
+Access-Control-Allow-Origin: <origin>
 ```
