@@ -2,4 +2,4 @@
 
 犬が教えるWebセキュリティ入門  
 
-https://akakou.github.io/inuwebsec101/
+https://akakou-docs.github.io/inuwebsec101/
